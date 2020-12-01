@@ -172,17 +172,6 @@ ORDER BY object_id
 SELECT DISTINCT institution
 FROM degrees
 
--- Raised amount per schools institution 
---SELECT d.institution, SUM(f.raised_amount_usd) AS raised_amount
---FROM degrees d
---INNER JOIN funding_rounds f
---ON d.object_id = f.object_id 
---GROUP BY d.institution
---ORDER BY SUM(f.raised_amount_usd) DESC
-
--- >> not working because no same object_id 
--- >> need to join with relationships table
-
 
 -- Exploring relationships table
 
